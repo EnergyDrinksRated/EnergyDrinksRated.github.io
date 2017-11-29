@@ -3,27 +3,30 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background: gray;
-    background: linear-gradient(white,gray);
+	background-color: #8d8d8d;
+    background: linear-gradient(#dfdfdf,#4e4e4e);
 }
 
 main {
-	margin-top: 57px;
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
 img.EnergyDrinksRated {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0px;
+	margin-left: 5%;
 }
 
 /*styles for drinks page*/
 
 h1.drinkManufacturer {
 	font-family: arial;
-	font-size: 150%;
+	font-size: 1.5em;
+}
+
+div.table {
+	overflow-x: auto;
 }
 
 td {
@@ -36,29 +39,38 @@ td {
 /*styling of navigation bar*/
 
 nav {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	width: 100%;
 	background-color: #9a0000;
-	text-align: center;
 	padding: 0px;
 	margin: 0px;
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
 	overflow: hidden;
 }
 
 ul.navList{
-	float: left;
 	list-style-type: none;
 	font-family: arial;
-	font-size: 200%;
-	margin: 0px 0px 0px 50px;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0px;
+	margin-left: 5%;
+	margin-right: 5%;
 	padding: 0px;
 }
 
-li.navButton{
+li.navButtonLeft{
 	margin: 0px;
 	padding: 0px;
-	display: inline;
+	float: left;
+}
+
+li.navButtonRight{
+	margin: 0px;
+	padding: 0px;
+	float: right;
 }
 
 /*styling of current page nav link*/
@@ -67,7 +79,6 @@ a.navActive {
 	background-color: white;
 	color: black;
 	display: inline-block;
-	font-weight: bold;
 	list-style-type: none;
 	text-decoration: none;
 	margin: 0px;
@@ -79,7 +90,6 @@ a.navActive {
 a.navLink:link, a.navLink:visited {
 	color: white;
 	display: inline-block;
-	font-weight: bold;
 	list-style-type: none;
 	text-decoration: none;
 	margin: 0px;
@@ -89,7 +99,6 @@ a.navLink:link, a.navLink:visited {
 a.navLink:hover {
 	color: white;
 	background-color: gray;
-	font-weight: bold;
 	display: inline-block;
 	list-style-type: none;
 	text-decoration: none;
@@ -101,39 +110,29 @@ a.navLink:active {
 	color: black;
 	background-color: white;
 	display: inline-block;
-	font-weight: bold;
 	list-style-type: none;
 	text-decoration: none;
 	margin: 0px;
 	padding: 10px;
 }
 
-/*Search bar on navigation menu*/
-
-input.searchBar[type=text]{
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 50px;
-  border: none;
-  height: 40px; 
-}
-
-/*Social Media Footer*/
+/*Social Media*/
 
 div.socialMedia {
-    position: fixed;
+    position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #9a0000;
     text-align: center;
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
 }
 
 ul.socialMedia {
 	list-style-type: none;
 	font-family: arial;
-	font-size: 200%;
+	font-size: 1em;
 	margin: 0px;
 	padding: 0px;
 }
@@ -149,17 +148,17 @@ a.socialMedia:link, a.socialMedia:visited {
 	display: inline;
 	list-style-type: none;
 	text-decoration: none;
-	margin: 0px;
-	padding: 0px 100px;
+	margin: 3%;
+	padding: 5px;
 }
 
 a.socialMedia:hover {
 	color: black;
-	display: inline-;
+	display: inline;
 	list-style-type: none;
 	text-decoration: none;
-	margin: 0px;
-	padding: 0px 100px;
+	margin: 3%;
+	padding: 5px;
 }
 
 a.socialMedia:active {
@@ -167,7 +166,26 @@ a.socialMedia:active {
 	display: inline;
 	list-style-type: none;
 	text-decoration: none;
-	margin: 0px;
-	padding: 0px 100px;
+	margin: 3%;
+	padding: 5px;
 }
 
+/*Footer*/
+
+div.footer {
+	background-color: #343434;
+	color: white;
+	font-family: arial;
+}
+
+ul.footerLink {
+	margin: 0px;
+	margin-left: 5%;
+	list-style-type: none;
+}
+
+ul.footerDetails {
+	margin: 0px;
+	margin-left: 5%;
+	list-style-type: none;
+}
