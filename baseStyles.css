@@ -1,4 +1,10 @@
-/*GENERAL Styles for Page*/
+/*BASE STYLES*/
+/*This style sheet includes styles used by every main page*/
+/*Effects homepage, drinks page and ingredients page*/
+
+/*##############################################*/
+
+/*2 Largest Containers*/
 
 body {
 	margin: 0px;
@@ -8,35 +14,22 @@ body {
 }
 
 main {
-	margin-left: 5%;
-	margin-right: 5%;
+	width: 1350px;
+	margin: 0px auto;
 }
+
+/*##############################################*/
+
+/*Logo Image*/
 
 img.EnergyDrinksRated {
 	display: block;
-	margin: 0px;
-	margin-left: 5%;
+	margin: 0px auto;
 }
 
-/*styles for drinks page*/
+/*##############################################*/
 
-h1.drinkManufacturer {
-	font-family: arial;
-	font-size: 1.5em;
-}
-
-div.table {
-	overflow-x: auto;
-}
-
-td {
-	font-size: 100%;
-	text-align: center;
-	font-family: arial;
-}
-
-/*MAIN NAV BAR*/
-/*styling of navigation bar*/
+/*Top Navigation Bar*/
 
 nav {
 	position: sticky;
@@ -53,11 +46,10 @@ nav {
 ul.navList{
 	list-style-type: none;
 	font-family: arial;
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: bold;
-	margin: 0px;
-	margin-left: 5%;
-	margin-right: 5%;
+	margin: 0px auto;
+	width: 1350px;
 	padding: 0px;
 }
 
@@ -73,7 +65,7 @@ li.navButtonRight{
 	float: right;
 }
 
-/*styling of current page nav link*/
+/*link styles dependent on current page*/
 
 a.navActive {
 	background-color: white;
@@ -84,8 +76,6 @@ a.navActive {
 	margin: 0px;
 	padding: 10px;
 }
-
-/*styling of the other nav links to the rest of the pages*/
 
 a.navLink:link, a.navLink:visited {
 	color: white;
@@ -116,7 +106,9 @@ a.navLink:active {
 	padding: 10px;
 }
 
-/*Social Media*/
+/*##############################################*/
+
+/*Bottom Social Media*/
 
 div.socialMedia {
     position: sticky;
@@ -132,7 +124,7 @@ div.socialMedia {
 ul.socialMedia {
 	list-style-type: none;
 	font-family: arial;
-	font-size: 1em;
+	font-size: 1rem;
 	margin: 0px;
 	padding: 0px;
 }
@@ -142,6 +134,8 @@ li.socialMedia {
 	padding: 0px;
 	display: inline;
 }
+
+/*link styles for off-site pages*/
 
 a.socialMedia:link, a.socialMedia:visited {
 	color: white;
@@ -170,22 +164,87 @@ a.socialMedia:active {
 	padding: 5px;
 }
 
+/*##############################################*/
+
 /*Footer*/
 
 div.footer {
+	width: 100%;
+	margin: 0px;
 	background-color: #343434;
+	overflow: hidden;
+}
+
+div.footerContents {
 	color: white;
+	margin: 0px auto;
+	width: 1350px;
 	font-family: arial;
+}
+
+div.footerLink {
+	margin: 0px;
+	float: left;
+	width: 50%;
+	position: relative;
+	display: inline-block;
 }
 
 ul.footerLink {
 	margin: 0px;
-	margin-left: 5%;
 	list-style-type: none;
+}
+
+li.footerLink {
+	margin: 0px;
+	display: inline-block;
+}
+
+a.footerLink {
+	margin: 0px;
+	padding: 0px;
+}
+
+div.footerDetails {
+	margin: 0px;
+	float: right;
+	width: 50%;
+	position: relative;
+	display: inline-block;
 }
 
 ul.footerDetails {
 	margin: 0px;
-	margin-left: 5%;
+	text-align: right;
 	list-style-type: none;
+	font-size: 0.7rem;
+}
+
+li.footerDetails {
+	margin: 0px;
+}
+
+/*##############################################*/
+
+/*Media Queries for Scaling Down*/
+
+@media screen and (max-width:1499px){
+	main {
+		width: 90%;
+		margin: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	ul.navList {
+		width: 90%;
+		margin: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	div.footerContents {
+		width: 90%;
+		margin: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 }
