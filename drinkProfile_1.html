@@ -3,14 +3,14 @@
 
   <title>EnergyDrinksRated</title>
   <link rel="stylesheet" type="text/css" href="baseStyles.css">
-  <link rel="stylesheet" type="text/css" href="homeStyles.css">
+  <link rel="stylesheet" type="text/css" href="drinkProfileStyles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 </head>
 
 <body>
-  
+
   <script src="scripts.js"></script>
 
   <header>
@@ -19,9 +19,7 @@
 
   <nav>
     <ul class="navList">
-	  <li class="navButtonLeft"><a class="navActive" href="index.html">Home<img></a></li>
-	  <li class="navButtonLeft"><a class="navLink" href="drinks.html">Drinks<img></a></li>
-	  <li class="navButtonLeft"><a class="navLink" href="ingredients.html">Ingredients<img></a></li>
+	  <li class="navButtonLeft"><a class="navLink" href="#" onclick="history.back()">Back<img></a></li>
 	  <li class="navButtonRight"><a href="https://twitter.com/EDRated" target="blank" class="fa fa-twitter"></a></li>
 	  <li class="navButtonRight"><a href="https://www.instagram.com/energy_drinks_rated/?hl=en" target="blank" class="fa fa-instagram"></a></li>
 	  <li class="navButtonRight"><a href="https://www.facebook.com/EnergyDrinksRated/" target="blank" class="fa fa-facebook"></a></li>
@@ -30,7 +28,11 @@
   
   <main>
 	
-	<h1> Website still in development :P </h1>
+	<h1 class="drinkName"> RedBull - Original </h1>
+	
+	<div class="drinkImage"></div>
+	<div class="drinkReview"></div>
+	<div class="drinkIngredients"></div>
 	
   </main>
   
@@ -69,6 +71,6 @@
     </div>
 	<div class="backToTopMobile"><a class="backToTopMobile" href="javascript:backToTop()">Back to Top</a></div>
   </div>
-  
+
 </body>
 </html>

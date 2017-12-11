@@ -1,0 +1,319 @@
+/*DRINK PROFILE STYLES*/
+/*This style sheet contains alterations to the BASE styles and should only be used for this page*/
+
+/*##############################################*/
+
+/*2 Largest Containers*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #8d8d8d;
+    background: linear-gradient(#dfdfdf,#4e4e4e);
+}
+
+main {
+	width: 1350px;
+	margin: 0px auto;
+}
+
+/*##############################################*/
+
+/*Logo Image*/
+
+img.EnergyDrinksRated {
+	display: block;
+	margin: 0px auto;
+}
+
+/*##############################################*/
+
+/*Top Navigation Bar*/
+
+nav {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	background-color: #9a0000;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -1px;
+	border-bottom: solid rgba(255,255,255,) 5px;
+	overflow: hidden;
+}
+
+ul.navList{
+	list-style-type: none;
+	font-family: arial;
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 0px auto;
+	width: 1350px;
+	padding: 0px;
+}
+
+li.navButtonLeft{
+	margin: 0px;
+	margin-left: -1px;
+	margin-right: -1px;
+	padding: 0px;
+	float: left;
+	border-left: solid black 2px;
+	border-right: solid black 2px;
+    /*doesn't work yet*/box-shadow: 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+li.navButtonRight{
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+
+/*link styles dependent on current page*/
+
+a.navActive {
+	background-color: white;
+	color: black;
+	display: inline-block;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0px;
+	padding: 10px;
+}
+
+a.navLink:link, a.navLink:visited {
+	color: white;
+	display: inline-block;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0px;
+	padding: 10px;
+}
+
+a.navLink:hover {
+	color: white;
+	background-color: gray;
+	display: inline-block;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0px;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+a.navLink:active {
+	color: black;
+	background-color: white;
+	display: inline-block;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 0px;
+	padding: 10px;
+}
+
+/*##############################################*/
+
+/*Bottom Social Media*/
+
+div.socialMedia {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #9a0000;
+    text-align: center;
+	border-top: solid black 1px;
+	border-bottom: solid black 1px;
+}
+
+ul.socialMedia {
+	list-style-type: none;
+	font-family: arial;
+	font-size: 1rem;
+	margin: 0px;
+	padding: 0px;
+}
+
+li.socialMedia {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+/*link styles for off-site pages*/
+
+a.socialMedia:link, a.socialMedia:visited {
+	color: white;
+	display: inline;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 3%;
+	padding: 5px;
+}
+
+a.socialMedia:hover {
+	color: black;
+	display: inline;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 3%;
+	padding: 5px;
+}
+
+a.socialMedia:active {
+	color: black;
+	display: inline;
+	list-style-type: none;
+	text-decoration: none;
+	margin: 3%;
+	padding: 5px;
+}
+
+/*##############################################*/
+
+/*Footer*/
+
+div.footer {
+	width: 100%;
+	margin: 0px;
+	background-color: #343434;
+	overflow: hidden;
+}
+
+div.footerContents {
+	color: white;
+	margin: 0px auto;
+	width: 1350px;
+	font-family: arial;
+}
+
+div.footerLink {
+	margin: 0px;
+	float: left;
+	width: 50%;
+	position: relative;
+	display: inline-block;
+}
+
+ul.footerLink {
+	margin: 0px;
+	list-style-type: none;
+}
+
+li.footerLink {
+	margin: 0px;
+	display: inline-block;
+}
+
+a.footerLink {
+	margin: 0px;
+	padding: 0px;
+}
+
+div.footerDetails {
+	margin: 0px;
+	float: right;
+	width: 50%;
+	position: relative;
+	display: inline-block;
+}
+
+ul.footerDetails {
+	margin: 0px;
+	text-align: right;
+	list-style-type: none;
+	font-size: 0.7rem;
+}
+
+li.footerDetails {
+	margin: 0px;
+}
+
+/*##############################################*/
+
+/*Media Queries for Scaling Down*/
+
+@media screen and (max-width:1499px){
+	main {
+		width: 90%;
+		margin: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	ul.navList {
+		width: 90%;
+		margin: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	div.footerContents {
+		width: 90%;
+		margin: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+
+/*##############################################*/
+
+/*STYLES FOR CONTENT*/
+
+h1.drinkName {
+	text-align: center;
+	text-decoration: underline;
+}
+
+div.drinkImage {
+	height: 300px;
+	padding: 0px;
+	margin: 0px;
+	width: 30%;
+	border: solid red 3px;
+	float: left;
+	position: relative;
+	display: inline-block;
+}
+
+div.drinkReview {
+	height: 300px;
+	padding: 0px;
+	margin: 0px, auto;
+	width: 30%;
+	border: solid green 3px;
+	position: relative;
+	display: inline-block;
+}
+
+div.drinkIngredients {
+	height: 300px;
+	padding: 0px;
+	margin: 0px;
+	width: 30%;
+	border: solid blue 3px;
+	float: right;
+	position: relative;
+	display: inline-block;
+}
+
+@media screen and (max-width:1499px){
+	div.drinkImage {
+		
+	}
+	
+	div.drinkReview {
+	
+	}
+	
+	div.drinkIngredients {
+	
+	}
+}
+	
+@media screen and (max-width:700px) {
+	
+	
+	
+	
+}

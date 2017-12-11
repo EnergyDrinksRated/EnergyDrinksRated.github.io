@@ -1,6 +1,6 @@
 /*BASE STYLES*/
 /*This style sheet includes styles used by every main page*/
-/*Effects homepage, drinks page and ingredients page*/
+/*Effects homepage, drinks page, ingredients page, drink profiles, bio and sitemap*/
 
 /*##############################################*/
 
@@ -10,21 +10,27 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background-color: #8d8d8d;
-    background: linear-gradient(#dfdfdf,#4e4e4e);
+    background: linear-gradient(#dfdfdf,#6a6a6a);
 }
 
 main {
-	width: 1350px;
+	width: 900px;
 	margin: 0px auto;
+	height: 100%;
 }
 
 /*##############################################*/
 
-/*Logo Image*/
+/*Header*/
+
+header {
+	width: 900px;
+	margin: 0px auto;
+}
 
 img.EnergyDrinksRated {
 	display: block;
-	margin: 0px auto;
+	float: left;
 }
 
 /*##############################################*/
@@ -35,12 +41,13 @@ nav {
 	position: sticky;
 	top: 0;
 	width: 100%;
+	height: 40px;
 	background-color: #9a0000;
 	padding: 0px;
 	margin: 0px;
-	border-top: solid black 1px;
-	border-bottom: solid black 1px;
+	margin-top: -1px;
 	overflow: hidden;
+	box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.5);
 }
 
 ul.navList{
@@ -49,20 +56,30 @@ ul.navList{
 	font-size: 1rem;
 	font-weight: bold;
 	margin: 0px auto;
-	width: 1350px;
+	width: 900px;
 	padding: 0px;
 }
 
 li.navButtonLeft{
 	margin: 0px;
+	margin-left: -1px;
+	margin-right: -1px;
 	padding: 0px;
 	float: left;
+	border-left: solid black 2px;
+	border-right: solid black 2px;
+	height: 100%;
 }
 
 li.navButtonRight{
 	margin: 0px;
+	margin-left: -1px;
+	margin-right: -1px;
 	padding: 0px;
 	float: right;
+	border-left: solid black 2px;
+	border-right: solid black 2px;
+	height: 100%;
 }
 
 /*link styles dependent on current page*/
@@ -70,98 +87,97 @@ li.navButtonRight{
 a.navActive {
 	background-color: white;
 	color: black;
-	display: inline-block;
+	display: block;
 	list-style-type: none;
 	text-decoration: none;
 	margin: 0px;
-	padding: 10px;
+	padding: 10px 20px 0px 20px;
+	height: 100%;
 }
 
 a.navLink:link, a.navLink:visited {
 	color: white;
-	display: inline-block;
+	display: block;
 	list-style-type: none;
 	text-decoration: none;
+	text-align: center;
 	margin: 0px;
-	padding: 10px;
+	padding: 10px 20px 0px 20px;
+	height: 100%;
 }
 
 a.navLink:hover {
 	color: white;
-	background-color: gray;
-	display: inline-block;
+	background-color: #8d8d8d;
+	display: block;
 	list-style-type: none;
 	text-decoration: none;
 	margin: 0px;
-	padding: 10px;
+	padding: 10px 20px 0px 20px;
+	transition: 0.7s;
 }
 
 a.navLink:active {
 	color: black;
 	background-color: white;
-	display: inline-block;
+	display: block;
 	list-style-type: none;
 	text-decoration: none;
 	margin: 0px;
-	padding: 10px;
+	padding: 10px 20px 0px 20px;
+	transition: 0s;
+}
+
+/*new social media links*/
+
+a.fa:link, a.fa:visited {
+	text-decoration: none;
+	display: block;
+	color: white;
+	height: 100%;
+	padding: 10px 10px 0px 10px;
+}
+
+a.fa:hover {
+	color: #8d8d8d;
+	transition: 0.7s;
+}
+
+a.fa:active {
+	color: black;
+	transition: 0s;
 }
 
 /*##############################################*/
 
 /*Bottom Social Media*/
+/*for mobile and tablet mode only*/
 
 div.socialMedia {
     position: sticky;
     left: 0;
     bottom: 0;
     width: 100%;
+	height: 60px;
     background-color: #9a0000;
-    text-align: center;
-	border-top: solid black 1px;
-	border-bottom: solid black 1px;
+	background: linear-gradient(rgba(154,0,0,0),rgba(154,0,0,1));
+	display: none;
+	overflow: hidden;
 }
 
 ul.socialMedia {
 	list-style-type: none;
 	font-family: arial;
 	font-size: 1rem;
-	margin: 0px;
+	text-align: center;
+	margin: 0px auto;
 	padding: 0px;
 }
 
 li.socialMedia {
-	margin: 0px;
+	margin: 0px 20px 0px 20px;
 	padding: 0px;
-	display: inline;
-}
-
-/*link styles for off-site pages*/
-
-a.socialMedia:link, a.socialMedia:visited {
-	color: white;
-	display: inline;
-	list-style-type: none;
-	text-decoration: none;
-	margin: 3%;
-	padding: 5px;
-}
-
-a.socialMedia:hover {
-	color: black;
-	display: inline;
-	list-style-type: none;
-	text-decoration: none;
-	margin: 3%;
-	padding: 5px;
-}
-
-a.socialMedia:active {
-	color: black;
-	display: inline;
-	list-style-type: none;
-	text-decoration: none;
-	margin: 3%;
-	padding: 5px;
+	display: hidden;
 }
 
 /*##############################################*/
@@ -171,50 +187,152 @@ a.socialMedia:active {
 div.footer {
 	width: 100%;
 	margin: 0px;
-	background-color: #343434;
+	background-color: #434343;
 	overflow: hidden;
+	height: 70px;
 }
 
 div.footerContents {
 	color: white;
 	margin: 0px auto;
-	width: 1350px;
+	padding: 0px;
+	width: 900px;
 	font-family: arial;
 }
 
+/*footer links*/
+
 div.footerLink {
+	padding: 0px;
 	margin: 0px;
+	margin-top: 12px;
 	float: left;
-	width: 50%;
 	position: relative;
-	display: inline-block;
+	display: block;
+	width: 40%;
+	height: 40px;
 }
 
 ul.footerLink {
+	padding: 0px;
 	margin: 0px;
 	list-style-type: none;
+	font-size: 0.7rem;
 }
 
 li.footerLink {
 	margin: 0px;
+	margin-right: 20px;
+	padding: 0px;
 	display: inline-block;
 }
 
-a.footerLink {
+a.footerLink:link, a.footerLink:visited {
 	margin: 0px;
-	padding: 0px;
+	padding: 2px 15px 2px 15px;
+	color: white;
+	text-decoration: none;
+	background-color: #434343;
+	border: solid black 1px;
 }
+
+a.footerLink:hover {
+	background-color: #9a0000;
+	transition: 0.7s;
+	
+}
+
+a.footerLink:active {
+	color: black;
+	background-color: #9a0000;
+	transition: 0s;
+}
+
+/*back to top*/
+/*standard button*/
+
+div.backToTop {
+	position: reletive;
+	text-align: center;
+	margin: 0px;
+	margin-top: 14px;
+	padding: 0px;
+	height: 30px;
+	width: 20%;
+	float: left;
+	font-size: 0.7rem;
+}
+
+a.backToTop:link, a.backToTop:visited {
+	text-decoration: none;
+	margin: 0px;
+	padding: 5px 20px 100px 20px;
+	color: white;
+	border: solid black 1px;
+}
+
+a.backToTop:hover {
+	background-color: #9a0000;
+	transition: 0.7s;
+}
+
+a.backToTop:active {
+	color: black;
+	transition: 0s;
+}
+
+/*mobile button*/
+
+div.backToTopMobile {
+	display: none;
+	text-align: center;
+	width: 90%;
+	margin: 0px;
+	margin-left: 5%;
+	margin-right: 5%;
+	background-color: #434343;
+	overflow: hidden;
+	font-family: arial;
+}
+
+a.backToTopMobile:link, a.backToTopMobile:visited {
+	text-decoration: none;
+	margin: 0px;
+	margin-top: 16px;
+	padding: 0px auto;
+	padding-top: 7px;
+	padding-bottom: 30px;
+	color: white;
+	display: block;
+	border: solid black 1px;
+	font-size: 0.7rem;
+}
+
+a.backToTopMobile:hover {
+	background-color: #9a0000;
+	transition: 0.7s;
+}
+
+a.backToTopMobile:active {
+	color: black;
+	transition: 0s;
+}	
+
+/*footer details*/
 
 div.footerDetails {
 	margin: 0px;
-	float: right;
-	width: 50%;
+	margin-top: 10px;
+	padding: 0px;
 	position: relative;
 	display: inline-block;
+	height: 40px;
+	width: 40%;
 }
 
 ul.footerDetails {
 	margin: 0px;
+	padding: 0px;
 	text-align: right;
 	list-style-type: none;
 	font-size: 0.7rem;
@@ -222,29 +340,98 @@ ul.footerDetails {
 
 li.footerDetails {
 	margin: 0px;
+	padding: 0px;
 }
 
 /*##############################################*/
 
 /*Media Queries for Scaling Down*/
 
-@media screen and (max-width:1499px){
+@media screen and (max-width:999px){
+	header {
+		width: 90%;
+		margin: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
 	main {
 		width: 90%;
 		margin: 0;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+	
 	ul.navList {
 		width: 90%;
 		margin: 0;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+	
 	div.footerContents {
 		width: 90%;
 		margin: 0;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
+}
+/*Query for moving to more horizontal layout*/
+
+@media screen and (max-width:599px){
+	ul.navList {
+		text-align: center;
+	}
+	
+	li.navButtonLeft {
+		float: none;
+		display: inline-block;
+		margin-left: -3px;
+		margin-right: -3px;
+	}
+	
+	li.navButtonRight {
+		display: none;
+	}
+	
+	/*#######*/
+	
+	div.socialMedia {
+		display: block;
+	}
+	
+	li.socialMedia {
+		display: inline-block;
+	}
+	
+	a.fa {
+		font-size: 3rem;
+	}
+	
+	/*#######*/
+	
+	div.footer {
+		height: 100px;
+	}	
+	
+	div.footerLink {
+		width: 30%;
+	}
+	
+	li.footerLink {
+		display: block;
+		margin-bottom: 18px;
+	}
+	
+	div.backToTop {
+		display: none;
+	}
+	
+	div.footerDetails {
+		width: 70%;
+	}
+	
+	div.backToTopMobile {
+		display: block;
+	}	
 }

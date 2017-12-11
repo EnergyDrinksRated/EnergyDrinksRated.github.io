@@ -1,8 +1,8 @@
 function searchIngredients() {
-    var input, filter, myUL, li, a, i;
-    input = document.getElementById("searchIngredients");
+    var input, filter, allIngredients, li, a, i;
+    input = document.getElementByClass("searchIngredients");
     filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
+    ul = document.getElementByClass("allIngredients");
     li = ul.getElementsByTagName("li");
     for (i = 0; i < li.length; i++) {
         a = li[i].getElementsByTagName("a")[0];
@@ -14,3 +14,7 @@ function searchIngredients() {
         }
     }
 }
+
+function backToTop() {
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
+};
