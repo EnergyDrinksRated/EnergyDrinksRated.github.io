@@ -9,13 +9,22 @@
 body {
 	margin: 0px;
 	padding: 0px;
+	background-color: yellow;
+}
+
+div.centerContain {
+	width: 900px;
+	margin: 0px auto;
 	background-color: #8d8d8d;
-    background: linear-gradient(#dfdfdf,#6a6a6a);
+	background: linear-gradient(#dfdfdf,#6a6a6a);
+	box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.5);
 }
 
 main {
-	width: 900px;
-	margin: 0px auto;
+	width: 90%;
+	margin: 0;
+	margin-left: 5%;
+	margin-right: 5%;
 	height: 100%;
 }
 
@@ -30,7 +39,8 @@ header {
 
 img.EnergyDrinksRated {
 	display: block;
-	float: left;
+	width: 90%;
+	margin: 2% 5% 2% 5%;
 }
 
 /*##############################################*/
@@ -55,8 +65,10 @@ ul.navList{
 	font-family: arial;
 	font-size: 1rem;
 	font-weight: bold;
-	margin: 0px auto;
-	width: 900px;
+	width: 90%;
+	margin: 0;
+	margin-left: 5%;
+	margin-right: 5%;
 	padding: 0px;
 }
 
@@ -91,7 +103,7 @@ a.navActive {
 	list-style-type: none;
 	text-decoration: none;
 	margin: 0px;
-	padding: 10px 20px 0px 20px;
+	padding: 10px 10px 0px 10px;
 	height: 100%;
 }
 
@@ -102,29 +114,19 @@ a.navLink:link, a.navLink:visited {
 	text-decoration: none;
 	text-align: center;
 	margin: 0px;
-	padding: 10px 20px 0px 20px;
+	padding: 10px 10px 0px 10px;
 	height: 100%;
 }
 
 a.navLink:hover {
 	color: white;
 	background-color: #8d8d8d;
-	display: block;
-	list-style-type: none;
-	text-decoration: none;
-	margin: 0px;
-	padding: 10px 20px 0px 20px;
 	transition: 0.7s;
 }
 
 a.navLink:active {
 	color: black;
 	background-color: white;
-	display: block;
-	list-style-type: none;
-	text-decoration: none;
-	margin: 0px;
-	padding: 10px 20px 0px 20px;
 	transition: 0s;
 }
 
@@ -175,7 +177,7 @@ ul.socialMedia {
 }
 
 li.socialMedia {
-	margin: 0px 20px 0px 20px;
+	margin: 0px 5% 0px 5%;
 	padding: 0px;
 	display: hidden;
 }
@@ -194,9 +196,11 @@ div.footer {
 
 div.footerContents {
 	color: white;
-	margin: 0px auto;
+	width: 90%;
+	margin: 0;
+	margin-left: 5%;
+	margin-right: 5%;
 	padding: 0px;
-	width: 900px;
 	font-family: arial;
 }
 
@@ -345,7 +349,7 @@ li.footerDetails {
 
 /*##############################################*/
 
-/*Media Queries for Scaling Down*/
+/*Media Query for Scaling Down Header*/
 
 @media screen and (max-width:999px){
 	header {
@@ -354,42 +358,20 @@ li.footerDetails {
 		margin-left: 5%;
 		margin-right: 5%;
 	}
-	
-	main {
-		width: 90%;
+}
+
+/*Media Query for Scaling Down Container Contents*/
+
+@media screen and (max-width:917px){
+	div.centerContain {
+		width: 100%;
 		margin: 0;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-	
-	ul.navList {
-		width: 90%;
-		margin: 0;
-		margin-left: 5%;
-		margin-right: 5%;
-	}
-	
-	div.footerContents {
-		width: 90%;
-		margin: 0;
-		margin-left: 5%;
-		margin-right: 5%;
 	}
 }
+
 /*Query for moving to more horizontal layout*/
 
 @media screen and (max-width:599px){
-	ul.navList {
-		text-align: center;
-	}
-	
-	li.navButtonLeft {
-		float: none;
-		display: inline-block;
-		margin-left: -3px;
-		margin-right: -3px;
-	}
-	
 	li.navButtonRight {
 		display: none;
 	}
@@ -415,7 +397,7 @@ li.footerDetails {
 	}	
 	
 	div.footerLink {
-		width: 30%;
+		width: 35%;
 	}
 	
 	li.footerLink {
@@ -428,10 +410,60 @@ li.footerDetails {
 	}
 	
 	div.footerDetails {
-		width: 70%;
+		width: 65%;
 	}
 	
 	div.backToTopMobile {
 		display: block;
+	}	
+}
+
+/*Query for stopping the page shrink too far*/
+
+@media screen and (max-width:360px) {
+	header {
+		width: 324px;
+		margin: 0;
+		margin-left: 18px;
+		margin-right: 18px;
+	}
+	
+	main {
+		width: 324px;
+		margin: 0;
+		margin-left: 18px;
+		margin-right: 18px;
+	}
+	
+	nav {
+		width: 360px;
+		margin: 0px;
+	}
+	
+	ul.navList {
+		width: 324px;
+		margin: 0;
+		margin-left: 18px;
+		margin-right: 18px;
+	}
+	
+	div.footer {
+		width: 360px;
+		margin: 0;
+	}
+	
+	div.footerContents {
+		width: 324px;
+		margin: 0;
+		margin-left: 18px;
+		margin-right: 18px;
+	}
+	
+	div.socialMedia {
+		width: 360px;
+	}
+	
+	div.backToTopMobile {
+		width: 324px;
 	}	
 }
