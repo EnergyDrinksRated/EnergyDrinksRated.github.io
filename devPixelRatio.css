@@ -1,32 +1,54 @@
-div.1 {
+body {
+	background-color: yellow;
+	margin: 20px;
+}
+
+div.container {
+	height: 150px;
 	width: 100px;
-	color: red;
-}
+}	
 
-div.2 {
+div.one {
+	width: 100px;
+	height: 50px;
+	background: red;
+	float: left;
+	display: inline-block;
+}	
+
+div.two {
 	width: 200px;
-	color: green;
+	height: 50px;
+	background: green;
+	float: left;
+	display: inline-block;
 }
 
-div.3 {
+div.three {
 	width: 300px;
-	color: blue;
+	height: 50px;
+	background: blue;
+	float: left;
+	display: inline-block;
 }
 
 @media only screen and (-moz-min-device-pixel-ratio: 2), 
        only screen and (-o-min-device-pixel-ratio: 2/1), 
        only screen and (-webkit-min-device-pixel-ratio: 2), 
        only screen and (min-device-pixel-ratio: 2) {
-			div.1 {
-				width: 100%;
-			}
+	div.container {
+		width: 100%;
+	}
+	
+	div.1 {
+		width: 100%;
+	}
 			
-			div.2 {
-				width: 50%;
-			}
+	div.2 {
+		width: 50%;
+	}
 			
-			div.3 {
-				width: 25%;
-			}	
-	   }
-	   
+	div.3 {
+		width: 25%;
+	}	
+} 
