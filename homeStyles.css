@@ -1,0 +1,62 @@
+
+/*<-#-#-#-#-#HOME STYLES#-#-#-#-#->*/
+
+/*INFO*/
+/*This style sheet includes styles used by the homepage*/
+
+/*<----------Left Container---------->*/
+
+div.leftContent {
+	border: solid red 1px;
+	float: left;
+	width: 65%;
+	padding: 0px;
+	margin: 0px;
+	height: 700px;
+}
+
+/*<--First Content - Top Drink-->*/
+
+div.topDrink {
+	border: solid green 1px;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	height: 100px;
+}	
+
+/*<----------Right Container---------->*/
+
+div.rightContent {
+	border: solid blue 1px;
+	float: right;
+	width: 30%;
+	padding: 0px;
+	margin: 0px;
+	height: 600px;
+}
+
+/*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/
+
+/*<--Device Pixel Ratio Query for All High DPI Screens-->*/
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), 
+       only screen and (-o-min-device-pixel-ratio: 2/1), 
+       only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-device-pixel-ratio: 2) {
+		   
+	div.leftContent {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+		   
+	div.rightContent {
+		float: left;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+

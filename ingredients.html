@@ -3,27 +3,27 @@
 
   <title>EnergyDrinksRated</title>
   <link rel="stylesheet" type="text/css" href="baseStyles.css">
-  <link rel="stylesheet" type="text/css" href="homeStyles.css">
+  <link rel="stylesheet" type="text/css" href="ingredientsStyles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 </head>
 
 <body>
-  
+
   <script src="scripts.js"></script>
-  
+
   <header>
     <a href="index.html"><img class="logoLandscape" src="logoLandscape.png"></a>
     <a href="index.html"><img class="logoPortrait" src="logoPortrait.png"></a>
   </header>
-  
+
   <div class="centerContain">
   <nav>
     <ul class="navList">
-	  <li class="navButtonLeft"><a class="navActive" href="index.html">Home<img></a></li>
-	  <li class="navButtonLeft"><a class="navLink" href="drinks.html">Drinks<img></a></li>
-	  <li class="navButtonLeft"><a class="navLink" href="ingredients.html">Ingredients<img></a></li>
+	  <li class="navButtonLeft"><a class="navLink" href="index.html">Home</a></li>
+	  <li class="navButtonLeft"><a class="navLink" href="drinks.html">Drinks</a></li>
+	  <li class="navButtonLeft"><a class="navActive" href="ingredients.html">Ingredients</a></li>
 	  <li class="navButtonRight"><a href="https://twitter.com/EDRated" target="blank" class="fa fa-twitter"></a></li>
 	  <li class="navButtonRight"><a href="https://www.instagram.com/energy_drinks_rated/?hl=en" target="blank" class="fa fa-instagram"></a></li>
 	  <li class="navButtonRight"><a href="https://www.facebook.com/EnergyDrinksRated/" target="blank" class="fa fa-facebook"></a></li>
@@ -32,15 +32,17 @@
   
   <main>
 	
-	<div class="leftContent">
-	  <div class="topDrink">
-	    <h1 class="topDrink"></h1>
-	  </div>
-	</div>
-	
-	<div class="rightContent">
-	</div>
-	
+  <input type="text" class="searchIngredients" onkeyup="searchIngredients()" placeholder="Search All Ingredients..." title="Type in a name">
+
+  <ul class="allIngredients">
+    <li><a href="#">A</a></li>
+    <li><a href="#">a</a></li>
+    <li><a href="#">B</a></li>
+    <li><a href="#">b</a></li>
+    <li><a href="#">C</a></li>
+    <li><a href="#">c</a></li>
+  </ul>
+
   </main>
   
   <div class="socialMedia">
@@ -78,7 +80,6 @@
     </div>
 	<div class="backToTopMobile"><a class="backToTopMobile" href="javascript:backToTop()">Back to Top</a></div>
   </div>
-  </div>
-  
+
 </body>
 </html>
