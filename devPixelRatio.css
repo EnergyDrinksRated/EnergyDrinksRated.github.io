@@ -41,15 +41,15 @@ div.three {
        only screen or (-webkit-min-device-pixel-ratio: 2), 
        only screen or (min-device-pixel-ratio: 2) {
 	
-	div.1 {
+	div.one {
 		width: 100%;
 	}
 			
-	div.2 {
+	div.two {
 		width: 50%;
 	}
 			
-	div.3 {
+	div.three {
 		width: 25%;
 	}	
 }
