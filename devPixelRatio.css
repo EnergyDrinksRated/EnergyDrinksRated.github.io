@@ -36,10 +36,10 @@ div.three {
 	margin: 0px;
 }
 
-@media only screen and (-moz-min-device-pixel-ratio: 2), 
-       only screen and (-o-min-device-pixel-ratio: 2/1), 
-       only screen and (-webkit-min-device-pixel-ratio: 2), 
-       only screen and (min-device-pixel-ratio: 2) {
+@media only screen or (-moz-min-device-pixel-ratio: 2), 
+       only screen or (-o-min-device-pixel-ratio: 2/1), 
+       only screen or (-webkit-min-device-pixel-ratio: 2), 
+       only screen or (min-device-pixel-ratio: 2) {
 	
 	div.1 {
 		width: 100%;
@@ -52,4 +52,4 @@ div.three {
 	div.3 {
 		width: 25%;
 	}	
-} 
+}
