@@ -1,0 +1,32 @@
+div.1 {
+	width: 100px;
+	color: red;
+}
+
+div.2 {
+	width: 200px;
+	color: green;
+}
+
+div.3 {
+	width: 300px;
+	color: blue;
+}
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), 
+       only screen and (-o-min-device-pixel-ratio: 2/1), 
+       only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-device-pixel-ratio: 2) {
+			div.1 {
+				width: 100%;
+			}
+			
+			div.2 {
+				width: 50%;
+			}
+			
+			div.3 {
+				width: 25%;
+			}	
+	   }
+	   
