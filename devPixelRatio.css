@@ -1,44 +1,45 @@
 body {
 	background-color: yellow;
-	margin: 20px;
+	margin: 0px;
 }
 
-div.container {
-	height: 150px;
-	width: 100px;
-}	
-
 div.one {
-	width: 100px;
+	width: 500px;
 	height: 50px;
 	background: red;
 	float: left;
 	display: inline-block;
+	position: fixed;
+	top: 0px;
+	margin: 0px;
 }	
 
 div.two {
-	width: 200px;
+	width: 1000px;
 	height: 50px;
 	background: green;
 	float: left;
 	display: inline-block;
+	position: fixed;
+	top: 50px;
+	margin: 0px;
 }
 
 div.three {
-	width: 300px;
+	width: 1500px;
 	height: 50px;
 	background: blue;
 	float: left;
 	display: inline-block;
+	position: fixed;
+	top: 100px;
+	margin: 0px;
 }
 
 @media only screen and (-moz-min-device-pixel-ratio: 2), 
        only screen and (-o-min-device-pixel-ratio: 2/1), 
        only screen and (-webkit-min-device-pixel-ratio: 2), 
        only screen and (min-device-pixel-ratio: 2) {
-	div.container {
-		width: 100%;
-	}
 	
 	div.1 {
 		width: 100%;
