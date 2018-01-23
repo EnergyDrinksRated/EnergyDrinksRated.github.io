@@ -27,8 +27,8 @@ div.centerContain {
 main {
 	width: 90%;
 	margin: 20px 5% 20px 5%;
-	height: 100%;
 	background: transparent;
+	overflow: auto;
 }
 
 /*<----------Logo Header---------->*/
@@ -357,7 +357,7 @@ a.backToTopMobile:active {
 
 /*<--Logo Additional Margin for Scaling-->*/
 
-@media screen and (max-width:999px){
+@media only screen and (max-width:999px){
 	header {
 		width: 90%;
 		margin: 0;
@@ -380,7 +380,7 @@ a.backToTopMobile:active {
 
 /*<--Removal of Background at Sides-->*/
 
-@media screen and (max-width:917px){
+@media only screen and (max-width:917px){
 	div.centerContain {
 		width: 100%;
 		margin: 0;
@@ -389,7 +389,7 @@ a.backToTopMobile:active {
 
 /*<--Change to Thinner Footer-->*/
 
-@media screen and (max-width:599px){
+@media only screen and (max-width:599px){
 	div.footer {
 		height: 100px;
 	}	
@@ -418,7 +418,7 @@ a.backToTopMobile:active {
 
 /*<--Stop Page Shrinking Too Far-->*/
 
-@media screen and (max-width:438px) {
+@media only screen and (max-width:438px) {
 	header {
 		width: 378px;
 		margin: 0;
@@ -491,6 +491,11 @@ a.backToTopMobile:active {
 		width: 100%;
 		margin: 0;
 	}
+	
+	main {
+		width: 90%;
+		margin: 20px 5% 20px 5%;
+	}	
 	
 /*<--Navbar-->*/	
 	

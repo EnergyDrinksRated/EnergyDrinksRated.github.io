@@ -12,17 +12,38 @@ div.leftContent {
 	width: 65%;
 	padding: 0px;
 	margin: 0px;
-	height: 700px;
+	overflow: auto;
 }
 
-/*<--First Content - Top Drink-->*/
+/*<--Top Drink-->*/
 
 div.topDrink {
-	border: solid green 1px;
-	width: 100%;
-	padding: 0px;
+	border: solid #9a0000 3px;
+	width: 95%;
+	padding: 5px;
 	margin: 0px;
-	height: 100px;
+	overflow: auto;
+}	
+
+h1.topDrink {
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+	font-size: 2rem;
+}
+
+div.profileInfo {
+	width: 100%;
+}	
+
+img.topDrink {
+	height: 300px;
+	float: left;
+	margin-right: 10px;
+}
+
+p.topDrink {
+	margin: 0px;
 }	
 
 /*<----------Right Container---------->*/
@@ -33,7 +54,20 @@ div.rightContent {
 	width: 30%;
 	padding: 0px;
 	margin: 0px;
-	height: 600px;
+	overflow: auto;
+}
+
+h1.infoColumn {
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+	font-size: 1.5rem;
+}	
+
+p.infoColumn {
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
 }
 
 /*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/
@@ -46,13 +80,14 @@ div.rightContent {
        only screen and (min-device-pixel-ratio: 2) {
 		   
 	div.leftContent {
-		width: 100%;
+		float: left;
+		width: 99%;
 		margin-bottom: 20px;
 	}
 		   
 	div.rightContent {
 		float: left;
-		width: 100%;
+		width: 99%;
 		margin-bottom: 20px;
 	}
 }
