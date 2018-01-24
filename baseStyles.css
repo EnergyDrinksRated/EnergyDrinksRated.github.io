@@ -466,6 +466,10 @@ a.backToTopMobile:active {
 
 /*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/
 
+@viewport {
+	width: device-width;
+}	
+
 /*<--Device Pixel Ratio Query for All High DPI Screens-->*/
 
 @media only screen and (-moz-min-device-pixel-ratio: 2), 
