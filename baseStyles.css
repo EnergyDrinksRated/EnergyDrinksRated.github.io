@@ -588,8 +588,12 @@ a.backToTopMobile:active {
 	}
 }
 
-@media only screen and (min-width:1000px) {
+@media only screen and (min-resolution: 192dpi),
+	   only screen and (-o-min-device-pixel-ratio: 2/1), 
+       only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-device-pixel-ratio: 2) {
 	body {
 		transform: scale(2);
+		transform-origin: 0 0;
 	}
 }	
