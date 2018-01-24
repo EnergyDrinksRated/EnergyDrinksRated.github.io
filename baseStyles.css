@@ -466,6 +466,8 @@ a.backToTopMobile:active {
 
 /*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/
 
+/*<--CSS Viewport Width Error Catch-->*/
+
 @viewport {
 	width: device-width;
 }	
@@ -592,3 +594,129 @@ a.backToTopMobile:active {
 		background-color: #434343;
 	}
 }
+
+/*<--Hannahs Phone-->*/
+
+@media only screen
+	and (device-width: 360px),
+	and (-webkit-min-device-pixel-ratio: 3) {
+		
+		body {
+		background-size: 150px;
+		width: 100%;
+	}	
+	
+	header {
+		width: 90%;
+		margin: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	div.centerContain {
+		width: 100%;
+		margin: 0;
+	}
+	
+	main {
+		width: 90%;
+		margin: 20px 5% 20px 5%;
+	}	
+	
+/*<--Navbar-->*/	
+	
+	nav {
+		width: 100%;
+		margin: 0px;
+	}
+	
+	ul.navList {
+		width: 90%;
+		margin: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+/*<--Footer-->*/	
+	
+	div.footer {
+		width: 100%;
+		margin: 0;
+		height: 100px;
+		color: green;
+	}
+	
+	div.footerContents {
+		width: 90%;
+		margin: 0;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	div.footerLink {
+		width: 35%;
+	}
+	
+	li.footerLink {
+		display: block;
+		margin-bottom: 18px;
+	}
+	
+	div.footerDetails {
+		width: 65%;
+	}
+	
+/*<--Back to Top-->*/	
+	
+	div.backToTop {
+		display: none;
+	}	
+	
+	div.backToTopMobile {
+		width: 90%;
+		display: block;
+	}
+	
+/*<--Social Media-->*/
+	
+	li.navButtonRight {
+		display: none;
+	}
+	
+	div.socialMedia {
+		display: block;
+		width: 100%;
+	}
+	
+	li.socialMedia {
+		display: inline-block;
+	}
+	
+	a.fa {
+		font-size: 2rem;
+	}
+	
+/*<--Removal of Hover Colour Sticking-->*/
+
+	a.navLink:hover {
+		background-color: #9a0000;
+	}
+
+	a.fa:hover {
+		color: white;
+	}
+	
+	a.footerLink:hover {
+		background-color: #434343;
+	}
+	
+	a.backToTopMobile:hover {
+		background-color: #434343;
+	}
+}
+	
+
+
+	
+}
+	
