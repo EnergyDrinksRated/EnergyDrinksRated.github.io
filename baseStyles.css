@@ -471,15 +471,7 @@ a.backToTopMobile:active {
 @media only screen and (-moz-min-device-pixel-ratio: 2), 
        only screen and (-o-min-device-pixel-ratio: 2/1), 
        only screen and (-webkit-min-device-pixel-ratio: 2), 
-       only screen and (min-device-pixel-ratio: 2),
-	   only screen and (-moz-min-device-pixel-ratio: 3), 
-       only screen and (-o-min-device-pixel-ratio: 3/1), 
-       only screen and (-webkit-min-device-pixel-ratio: 3), 
-       only screen and (min-device-pixel-ratio: 3)
-	   only screen and (-moz-min-device-pixel-ratio: 4), 
-       only screen and (-o-min-device-pixel-ratio: 4/1), 
-       only screen and (-webkit-min-device-pixel-ratio: 4), 
-       only screen and (min-device-pixel-ratio: 4) {
+       only screen and (min-device-pixel-ratio: 2) {
 		   
 /*<--Changing Widths to Fill Screen-->*/
 /*<--Largest Objects-->*/		   
@@ -595,3 +587,9 @@ a.backToTopMobile:active {
 		background-color: #434343;
 	}
 }
+
+@media only screen and (min-width:1000px) {
+	body {
+		transform: scale(2);
+	}
+}	
