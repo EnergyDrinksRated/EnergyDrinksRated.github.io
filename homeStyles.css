@@ -28,7 +28,6 @@ div.topDrink {
 h1.topDrink {
 	margin: 0px;
 	padding: 0px;
-	font-family: arial;
 	font-size: 2rem;
 }
 
@@ -60,14 +59,12 @@ div.rightContent {
 h1.infoColumn {
 	margin: 0px;
 	padding: 0px;
-	font-family: arial;
 	font-size: 1.5rem;
 }	
 
 p.infoColumn {
 	margin: 0px;
 	padding: 0px;
-	font-family: arial;
 }
 
 /*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/

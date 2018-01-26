@@ -1,29 +1,43 @@
-/*INGREDIENTS STYLES*/
-/*This style sheet is for the main of the ingredients page*/
 
-/*##############################################*/
+/*<-#-#-#-#-#INGREDIENTS STYLES#-#-#-#-#->*/
 
-input.searchIngredients {
-	width: 100%;
-	font-size: 16px;
-	border: 1px solid #ddd;
-	padding: 0;
-	margin: 0;
+/*INFO*/
+/*This style sheet includes styles used by the ingredients page*/
+
+p.pageDescription {
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 10px;
 }
 
-ul.allIngredients {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-}
-
-li.ingredient {
-	border: 1px solid #ddd;
-	/*margin-top: -1px; Prevents double borders*/
-	background-color: #f6f6f6;
-	text-decoration: none;
+#ingredientInput {
+	margin: 0px;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 1.2rem;
 	color: black;
-	display: block
-	padding: 0;
-	margin: 0;
+	border: solid #9a0000 2px;
+	width: 50%;
+	min-width: 300px;
+}	
+
+#ingredientsTable {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/
+
+/*<--Device Pixel Ratio Query for All High DPI Screens-->*/
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), 
+       only screen and (-o-min-device-pixel-ratio: 2/1), 
+       only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-device-pixel-ratio: 2) {
+		   
+/*<--all contents-->*/
+	#ingredientInput {
+		width: 90%;
+		min-width: 0px;
+	}
 }

@@ -30,14 +30,42 @@
     <ul class="navList">
 	  <li class="navButtonLeft"><a class="navLink" href="index.html">Home</a></li>
 	  <li class="navButtonLeft"><a class="navLink" href="drinks.html">Drinks</a></li>
-	  <li class="navButtonLeft"><a class="navActive" href="ingredients.html">Ingredients</a></li>
-	  <li class="navButtonRight"><a href="https://twitter.com/EDRated" target="blank" class="fa fa-twitter"></a></li>
+	  <li class="navButtonLeft" id="fixBorders"><a class="navLink" href="ingredients.html">Ingredients</a></li>
+	  <li class="navButtonRight" id="fixBorders"><a href="https://twitter.com/EDRated" target="blank" class="fa fa-twitter"></a></li>
 	  <li class="navButtonRight"><a href="https://www.instagram.com/energy_drinks_rated/?hl=en" target="blank" class="fa fa-instagram"></a></li>
 	  <li class="navButtonRight"><a href="https://www.facebook.com/EnergyDrinksRated/" target="blank" class="fa fa-facebook"></a></li>
 	</ul> 
   </nav>
   
   <main>
+	
+	<p class="pageDescription"> Below is a comprehensive list of the ingredients in every drink featured on the site. Use the search bar to narrow down the list to find information about the ingredient you are looking for.</p>
+	
+	<input type="text" id="ingredientInput" onkeyup="searchFunction()" placeholder="Search for an Ingredient..." title="Type in an Ingredient">
+
+    <table id="ingredientsTable">
+	
+      <tr class="header">
+        <th>Ingredient Name</th>
+        <th>Details</th>
+      </tr>
+	  
+	  <tr class="ingredient">
+	    <td>ajkfbekf</td>
+		<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	  </tr>
+	  
+	  <tr class="ingredient">
+	    <td>kvdnvjdnjv</td>
+		<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	  </tr>
+	  
+	  <tr class="ingredient">
+	    <td>mnbvcd</td>
+		<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	  </tr>
+	  
+	</table>
 	
   </main>
   
