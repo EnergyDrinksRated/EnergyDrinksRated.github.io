@@ -4,27 +4,63 @@
 /*INFO*/
 /*This style sheet includes styles used by the ingredients page*/
 
+/*<----------Description at Top of Page---------->*/
+
+h1.pageDescription {
+	margin: 0px;
+	margin-bottom: 5px;
+	padding: 0px;
+	font-size: 1.5rem;
+}	
+
 p.pageDescription {
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 10px;
 }
 
+/*<----------Searchbar and Table---------->*/
+
+/*<--Searchbar-->*/
+
 #ingredientInput {
 	margin: 0px;
 	padding: 5px;
-	margin-bottom: 10px;
 	font-size: 1.2rem;
 	color: black;
 	border: solid #9a0000 2px;
 	width: 50%;
 	min-width: 300px;
-}	
+	box-shadow: 0 15px 30px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*<--Table-->*/
 
 #ingredientsTable {
 	margin: 0px;
+	margin-top: 20px;
 	padding: 0px;
+	width: 100%;
+	border-collapse: collapse;
+	text-align: left;
 }
+
+tr.header th {
+	border-bottom: solid black 1px;
+}
+
+tr.ingredient td {
+	border-bottom: solid black 1px;
+}
+
+.columnOne {
+	width: 20%;
+	border-right: solid black 1px;
+}
+
+.columnTwo {
+	width: 80%;
+}	
 
 /*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/
 
@@ -37,7 +73,8 @@ p.pageDescription {
 		   
 /*<--all contents-->*/
 	#ingredientInput {
-		width: 90%;
+		width: 98%;
 		min-width: 0px;
+		max-width: 300px;
 	}
 }
