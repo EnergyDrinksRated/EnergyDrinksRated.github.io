@@ -1,19 +1,116 @@
-/*DRINKS STYLES*/
-/*This style sheet is for the main of the all drinks page*/
 
-/*##############################################*/
+/*<-#-#-#-#-#DRINKS STYLES#-#-#-#-#->*/
+
+/*INFO*/
+/*This style sheet includes styles used by the drinks page*/
+
+/*<----------Drinks Gallery---------->*/
+
+/*<--Layout and Structure-->*/
 
 h1.drinkManufacturer {
-	font-family: arial;
+	margin: 0px;
+	margin-bottom: 10px;
+	padding: 0px;
 	font-size: 1.5rem;
 }
 
-div.table {
-	overflow-x: auto;
+div.profileContainer {
+	width: 100%;
+}		
+
+/*<--Drink Card-->*/
+
+div.drinkCard {
+	margin: 0px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding: 0px;
+	width: 200px;
+	height: 320px;
+	background-color: white;
+	overflow: hidden;
+	float: left;
+	border: solid #9a0000 5px;
+	position: relative;
+}	
+
+img.drinkImage {
+	margin: 40px 0px 5px 0px;
+	padding: 0px;
+	height: 250px;
+	width: 200px;
+	display: block;
+	object-fit: contain;
+	position: absolute;
 }
 
-td {
-	font-size: 100%;
+h1.drinkName {
+	margin: 0px;
+	padding: 5px;
+	font-size: 1.2rem;
+}
+
+/*<--Divs For Slant Effect-->*/
+
+div.topRazor {
+	margin: 0px;
+	padding: 0px;
+	width: 200px;
+	height: 170px;
+	z-index: 1;
+}
+
+div.bottomRazor {
+	width: 200px;
+	height: 200px;
+	background-color: #434343;
+	opacity: .7;
+	-ms-transform: skewY(160deg);
+    -webkit-transform: skewY(160deg);
+    transform: skewY(160deg);
+	position: relative;
+	bottom: 40px;
+	z-index: 1;
+	content: ' ';
+}
+
+/*<--Conent Teaser-->*/
+
+div.cardDetails {
+	margin: 0px;
+	margin-left: 5px;
+	padding: 0px;
+	position: relative;
+	bottom: 205px;
+	z-index: 2;
+}
+
+/*<--Link to Profile State Changes-->*/
+
+a.viewProfile:link , a.viewProfile:visited {
+	margin: 0px;
+	padding: 0px;
+	padding-top: 10px;
+	width: 100%;
+	height: 40px;
 	text-align: center;
-	font-family: arial;
+	font-size: 1.2rem;
+	display: inline-block;
+	text-decoration: none;
+	background-color: white;
+	color: black;
+	position: relative;
+	bottom: 210px;
+	z-index: 3;
+}
+
+a.viewProfile:hover {
+	background-color: #9a0000;
+	transition: 0.5s;
+}
+
+a.viewProfile:active {
+	color: white;
+	transition: 0s;
 }
