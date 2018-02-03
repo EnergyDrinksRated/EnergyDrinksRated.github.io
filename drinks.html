@@ -3,6 +3,8 @@
 <html>
 <head>
 
+  <!--Adsense Code from Google-->
+
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   
   <script>
@@ -11,6 +13,8 @@
   enable_page_level_ads: true
   });
   </script>
+  
+  <!--Title and Meta Data-->
 
   <title>EnergyDrinksRated</title>
   
@@ -19,6 +23,8 @@
   <meta name="author" content="Matthew Elwood">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
   
+  <!--Linked Styles for Page-->
+  
   <link rel="stylesheet" type="text/css" href="baseStyles.css">
   <link rel="stylesheet" type="text/css" href="drinksStyles.css"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,8 +32,12 @@
 </head>
 
 <body>
+
+  <!--Import Scripts-->
   
   <script src="scripts.js"></script>
+  
+  <!--Logo Headers for Portrait and Landscape-->
 
   <header>
     <a href="index.html"><img class="logoLandscape" src="logoLandscape.png"></a>
@@ -35,6 +45,9 @@
   </header>
 
   <div class="centerContain">
+  
+  <!--Navigation bar-->
+  
   <nav>
     <ul class="navList">
 	  <li class="navButtonLeft"><a class="navLink" href="index.html">Home</a></li>
@@ -46,33 +59,90 @@
 	</ul> 
   </nav>
   
+  <!--Unique to Page Content-->
+  
   <main>
 	
-	<h1 class="drinkManufacturer">Red Bull</h1>
+	<!--Red Bull Header-->
 	
-    <div class="profileContainer">
+	<a class="hideProfiles"><div class="hideProfiles" onclick="hideRedBullProfiles()">
+	  <h1 class="drinkManufacturer">Red Bull</h1>
+	  <h1 class="plus" id="redBullPlus">+</h1>
+	  <h1 class="minus" id="redBullMinus">-</h1>
+	</div></a>
 	
-	  <div class="drinkCard">
+	<!--Red Bull Profiles-->
+	
+    <div class="profileContainer" id="redBullProfiles">
+	
+	  <!--Red Bull Original-->
+	
+	  <a class="viewProfile" href="drinkProfile_1.html"><div class="drinkCard">
 	  
-	    <img class="drinkImage" src="redBullOriginal.png">
-		<div class="topRazor">
-		  <h1 class="drinkName">Original Red Bull</h1>
+		<div class="drinkName">
+		  <h1 class="drinkName">Original</h1>
 		</div>
+	    
+		<img class="drinkImage" src="redBullOriginal.png">
+		
+		<div class="topRazor"></div>
 		<div class="bottomRazor"></div>
 		
 		<div class="cardDetails">
 		  <p class="cardDetails">Energy/100ml:</p>
 	      <p class="cardDetails">Caffine/100ml:</p>
 		  <p class="cardDetails">Rating:</p>
+		</div>  
+		
+	  </a></div>
+	  
+	  <!--Red Bull Sugar Free-->
+	  
+	  <a class="viewProfile" href="drinkProfile_1.html"><div class="drinkCard">
+	  
+		<div class="drinkName">
+		  <h1 class="drinkName">Sugar Free</h1>
 		</div>
+	    
+		<img class="drinkImage" src="redBullOriginal.png">
 		
-		<a class="viewProfile" href="drinkProfile_1.html">View Profile</a>
+		<div class="topRazor"></div>
+		<div class="bottomRazor"></div>
 		
-	  </div>
+		<div class="cardDetails">
+		  <p class="cardDetails">Energy/100ml:</p>
+	      <p class="cardDetails">Caffine/100ml:</p>
+		  <p class="cardDetails">Rating:</p>
+		</div>  
+		
+	  </a></div>
+	  
+	  <!--Red Bull Calorie Free-->
+	  
+	  <a class="viewProfile" href="drinkProfile_1.html"><div class="drinkCard">
+	  
+		<div class="drinkName">
+		  <h1 class="drinkName">Calorie Free</h1>
+		</div>
+	    
+		<img class="drinkImage" src="redBullOriginal.png">
+		
+		<div class="topRazor"></div>
+		<div class="bottomRazor"></div>
+		
+		<div class="cardDetails">
+		  <p class="cardDetails">Energy/100ml:</p>
+	      <p class="cardDetails">Caffine/100ml:</p>
+		  <p class="cardDetails">Rating:</p>
+		</div>  
+		
+	  </a></div>
 	  
     </div>
 	
   </main>
+  
+  <!--Bottom Social Media Links-->
   
   <div class="socialMedia">
     <ul class="socialMedia">
@@ -84,6 +154,8 @@
 	    <a href="https://twitter.com/EDRated" target="blank" class="fa fa-twitter"></a></li>
 	</ul>  
   </div>
+  
+  <!--Footer-->
   
   <div class="footer">
     <div class="footerContents">

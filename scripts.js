@@ -1,4 +1,4 @@
-//table search from w3schools//
+//Table Search From W3Schools//
 
 function searchFunction() {
   var input, filter, table, tr, td, i;
@@ -18,8 +18,25 @@ function searchFunction() {
   }
 }
 
-//back to top//
+//Back To Top//
 
 function backToTop() {
 	document.body.scrollTop = document.documentElement.scrollTop = 0;
 };
+
+//Show Hide Toggle For Red Bull//
+
+function hideRedBullProfiles() {
+    var x = document.getElementById("redBullProfiles");
+	var y = document.getElementById("redBullPlus");
+	var z = document.getElementById("redBullMinus");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+		y.style.display = "none";
+		z.style.display = "block";
+    } else {
+        x.style.display = "none";
+		y.style.display = "block";
+		z.style.display = "none";
+    }
+}
