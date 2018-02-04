@@ -4,6 +4,7 @@
 /*INFO*/
 /*This style sheet includes styles used by every main page*/
 /*Effects homepage, drinks page, ingredients page, drink profiles, bio and sitemap*/
+/*This site can scale to a minimum of 275px*/
 
 /*<----------Largest Containers---------->*/
 
@@ -37,6 +38,8 @@ main {
 	width: 90%;
 	margin: 20px 5% 20px 5%;
 	min-height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 /*<----------Logo Header---------->*/
@@ -62,12 +65,13 @@ img.logoPortrait {
 
 nav {
 	position: sticky;
-	top: 0px;
 	width: 100%;
 	height: 40px;
 	background-color: #9a0000;
 	padding: 0px;
 	margin: 0px;
+	margin-top: -3px;
+	top: -1px;
 	overflow: hidden;
 	box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.5);
 	z-index: 10;
@@ -82,9 +86,10 @@ ul.navList {
 	margin-left: 5%;
 	margin-right: 5%;
 	padding: 0px;
+	text-align: center;
 }
 
-/*<--Left and Right Buttons on Top Navbar-->*/
+/*<--Left and Right Buttons on Top Navbar (and Navbar Titles)-->*/
 
 li.navButtonLeft {
 	margin: 0px;
@@ -92,6 +97,19 @@ li.navButtonLeft {
 	float: left;
 	height: 100%;
 	border-left: solid black 1px;
+}
+
+li.navTitle {
+	margin: 0px;
+	margin-right: -5%;
+	padding: 10px 10px 0px 10px;
+	height: 100%;
+	border-left: solid black 1px;
+	border-right: solid black 1px;
+	display: inline-block;
+	background-color: white;
+	font-weight: bold;
+	font-size: 1.2rem;
 }
 
 li.navButtonRight {
@@ -501,13 +519,11 @@ a.backToTopMobile:active {
 		margin: 20px 5% 20px 5%;
 	}	
 	
-/*<--Navbar-->*/	
+/*<--Navbar-->*/
 	
 	nav {
 		width: 100%;
 		margin: 0px;
-		margin-top: -3px;
-		top: -1px;
 	}
 	
 	ul.navList {
@@ -515,6 +531,11 @@ a.backToTopMobile:active {
 		margin: 0;
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+	
+	li.navTitle {
+		margin-right: 0px;
+		margin-left: -10%;
 	}
 	
 /*<--Footer-->*/	
@@ -565,6 +586,7 @@ a.backToTopMobile:active {
 	div.socialMedia {
 		display: block;
 		width: 100%;
+		bottom: -1px;
 	}
 	
 	li.socialMedia {
@@ -615,31 +637,37 @@ a.backToTopMobile:active {
 
 /*<--Rules for Smaller Phones-->*/
 
-@media only screen and (max-width:359px) {
-	li.socialMedia {
-		margin: 0px 5% 0px 5%;
+	@media only screen and (max-width:365px) {
+		li.socialMedia {
+			margin: 0px 5% 0px 5%;
+		}
+	
+		div.footer {
+			height: 124px;
+		}
+	
+		div.footerLink {
+			width: 100%;
+			height: 20px;
+		}
+	
+		li.footerLink {
+			display: inline;
+		}	
+	
+		div.footerDetails {
+			width: 100%;
+			margin-top: 5px;
+		}
+	
+		a.backToTopMobile:link, a.backToTopMobile:visited {
+			margin-top: 16px;
+		}
 	}
 	
-	div.footer {
-		height: 124px;
-	}
-	
-	div.footerLink {
-		width: 100%;
-		height: 20px;
-	}
-	
-	li.footerLink {
-		display: inline;
+	@media only screen and (max-width:320px) {
+		li.navTitle {
+			float: right;
+		}
 	}	
-	
-	div.footerDetails {
-		width: 100%;
-		margin-top: 5px;
-	}
-	
-	a.backToTopMobile:link, a.backToTopMobile:visited {
-		margin-top: 16px;
-	}
-}   
 }

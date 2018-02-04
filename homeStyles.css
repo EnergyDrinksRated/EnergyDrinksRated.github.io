@@ -7,43 +7,40 @@
 /*<----------Left Container---------->*/
 
 div.leftContent {
-	border: solid red 1px;
+	border: solid 1px green;
 	float: left;
 	width: 65%;
 	padding: 0px;
 	margin: 0px;
-	overflow: auto;
 }
 
 /*<--Top Drink-->*/
 
 div.topDrink {
-	border: solid #9a0000 3px;
-	width: 95%;
-	padding: 5px;
+	width: 100%;
+	padding: 0px;
 	margin: 0px;
-	overflow: auto;
 }	
 
 h1.topDrink {
 	margin: 0px;
+	margin-bottom: 10px;
 	padding: 0px;
-	font-size: 2rem;
-}
-
-div.profileInfo {
-	width: 100%;
-}	
-
-img.topDrink {
-	height: 300px;
-	float: left;
-	margin-right: 10px;
+	font-size: 1.5rem;
 }
 
 p.topDrink {
 	margin: 0px;
-}	
+	padding: 0px;
+	float: left;
+	width: 55%;
+}
+
+div.cardContainer {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
 
 /*<----------Right Container---------->*/
 
@@ -67,15 +64,30 @@ p.infoColumn {
 	padding: 0px;
 }
 
+/*<----------Media Queries PC Version---------->*/
+
+@media only screen and (max-width:917px){
+	p.topDrink {
+		width: 40%;
+	}
+	
+@media only screen and (max-width:660px){
+	p.topDrink {
+		width: 100%;
+	}
+}
+
 /*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/
 
-/*<--Device Pixel Ratio Query for All High DPI Screens-->*/
+/* <--Device Pixel Ratio Query for All High DPI Screens-->*/
 
 @media only screen and (-moz-min-device-pixel-ratio: 2), 
        only screen and (-o-min-device-pixel-ratio: 2/1), 
        only screen and (-webkit-min-device-pixel-ratio: 2), 
        only screen and (min-device-pixel-ratio: 2) {
 		   
+/*<--Largest Containers-->*/
+
 	div.leftContent {
 		float: left;
 		width: 99%;
@@ -87,8 +99,21 @@ p.infoColumn {
 		width: 99%;
 		margin-bottom: 20px;
 	}
+	
+/*<--Top Drink SHITTY NEEDS IMPROVING WRAP TEXT AROUND DIV IF POSSIBLE-->*/
+	
+	p.topDrink {
+			width: 70%;
+		}
+	
+	@media only screen and (max-width:830px){
+		p.topDrink {
+			width: 50%;
+		}
+	}
+	@media only screen and (max-width:505px){
+		p.topDrink {
+			width: 100%;
+		}
+	}	
 }
-
-
-
-

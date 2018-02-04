@@ -1,12 +1,10 @@
-/*SITE MAP STYLES*/
-/*This style sheet is for the main of the site map page*/
 
-/*##############################################*/
+/*<-#-#-#-#-#SITE MAP STYLES#-#-#-#-#->*/
 
-h1.siteMap {
-	font-family: arial;
-	text-align: center;
-}
+/*INFO*/
+/*This style sheet includes styles used by the site map*/
+
+/*<--Site Map Container-->*/
 
 div.mapContainer {
 	border: solid black 2px;
