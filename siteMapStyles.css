@@ -4,38 +4,114 @@
 /*INFO*/
 /*This style sheet includes styles used by the site map*/
 
-/*<--Site Map Container-->*/
+/*<--Site Map Largest Divs-->*/
 
 div.mapContainer {
-	border: solid black 2px;
-	margin: 0% 20% 0% 20%;
-	font-family: arial;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
 }
 
-/*Main Page Link Styles*/
-
-ul.mainPages {
-	list-style-type: none;
+div.pageContainer {
+	margin: 0px;
+	margin-right: 5%;
+	padding: 0px;
+	width: 30%;
+	background-color: rgba(255, 255, 255, 0.5);
+	float: left;
+	min-height: 150px;
 }
 
-li.mainPage {
-	
-}
+#removeMargin {
+	margin-right: -5%;
+}	
 
-a.mainPage {
+/*<--Map Catagory-->*/
+
+p.mapCatagory {
+	margin: 0px;
+	padding: 5px 2% 5px 2%;
+	font-size: 1rem;
+	text-align: center;
+}	
+
+/*<--Main Page Links-->*/
+
+a.mainPage:link, a.mainPage:visited {
+	margin: 0px;
+	padding: 5px 2% 5px 2%;
+	display: block;
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-align: center;
 	text-decoration: none;
+	color: black;
 }
 
-/*Sub Page Link Styles*/
-
-ul.subPages {
-	list-style-type: none;
+a.mainPage:hover {
+	background-color: #9a0000;
+	color: white;
+	transition: 0.7s;
 }
 
-li.subPage {
-	
+a.mainPage:active {
+	color: black;
+	transition: 0s;
 }
 
-a.subPage {
+/*<--Sub Page Links-->*/
+
+a.subPage:link, a.subPage:visited {
+	margin: 0px;
+	padding: 5px 2% 5px 2%;
+	display: block;
+	font-size: 1rem;
+	text-align: center;
 	text-decoration: none;
+	color: black;
+}
+
+a.subPage:hover {
+	background-color: #8d8d8d;
+	transition: 0.7s;
+}	
+
+a.subPage:active {
+	color: white;
+	transition: 0s;
+}
+
+/*<----------Media Queries PC Version---------->*/
+
+/*<--Change to Vertical Alignment (works for mobile too)-->*/
+
+@media only screen and (max-width:500px){
+	div.pageContainer {
+		width: 99%;
+		margin-bottom: 20px;
+		min-height: 0px;
+	}
+}
+
+/*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/
+
+/* <--Device Pixel Ratio Query for All High DPI Screens-->*/
+
+@media only screen and (-moz-min-device-pixel-ratio: 2), 
+       only screen and (-o-min-device-pixel-ratio: 2/1), 
+       only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-device-pixel-ratio: 2) {
+		   
+/*<----------Removal Of Hover Properties---------->*/
+
+	a.mainPage:hover {
+		background-color: rgba(0, 0, 0, 0);
+		transition: 0s;
+	}
+	
+	a.subPage:hover {
+		background-color: rgba(0, 0, 0, 0);
+		transition: 0s;
+		color: black;
+	}	
 }

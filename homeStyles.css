@@ -4,10 +4,45 @@
 /*INFO*/
 /*This style sheet includes styles used by the homepage*/
 
+/*<----------General Content for Both Containers (re-usable declerations)---------->*/
+
+div.topContentBox {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.contentBox {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	margin-top: 20px;
+	float: left;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+h1.contentBox {
+	margin: 0px;
+	padding: 5px 2% 0px 2%;
+	font-size: 1.5rem;
+}
+
+h2.contentBox {
+	margin: 0px;
+	padding: 5px 2% 0px 2%;
+	font-size: 1rem;
+}
+
+p.contentBox {
+	margin: 0px;
+	padding: 5px 2% 5px 2%;
+}
+
 /*<----------Left Container---------->*/
 
 div.leftContent {
-	border: solid 1px green;
 	float: left;
 	width: 65%;
 	padding: 0px;
@@ -16,66 +51,70 @@ div.leftContent {
 
 /*<--Top Drink-->*/
 
-div.topDrink {
-	width: 100%;
-	padding: 0px;
+div.topDrinkInfo {
 	margin: 0px;
-}	
+	padding: 0px;
+	float: left;
+	width: calc(100% - 250px);
+}
 
 h1.topDrink {
 	margin: 0px;
-	margin-bottom: 10px;
-	padding: 0px;
+	padding: 5px 2% 0px 2%;
 	font-size: 1.5rem;
 }
 
 p.topDrink {
 	margin: 0px;
-	padding: 0px;
-	float: left;
-	width: 55%;
+	padding: 5px 2% 5px 2%;
+	display: inline-block;
+	min-width: 96%;
 }
 
-div.cardContainer {
+div.topDrinkCard {
 	margin: 0px;
 	padding: 0px;
-	float: left;
+	float: right;
 }
 
 /*<----------Right Container---------->*/
 
 div.rightContent {
-	border: solid blue 1px;
 	float: right;
 	width: 30%;
 	padding: 0px;
 	margin: 0px;
-	overflow: auto;
-}
-
-h1.infoColumn {
-	margin: 0px;
-	padding: 0px;
-	font-size: 1.5rem;
-}	
-
-p.infoColumn {
-	margin: 0px;
-	padding: 0px;
 }
 
 /*<----------Media Queries PC Version---------->*/
 
-@media only screen and (max-width:917px){
-	p.topDrink {
-		width: 40%;
+/*<--Top Drink-->*/
+
+@media only screen and (max-width:675px){
+	div.topDrinkInfo {
+		float: left;
+		width: 99%;
+		margin-bottom: 20px;
 	}
-	
-@media only screen and (max-width:660px){
-	p.topDrink {
-		width: 100%;
-	}
+		
+	div.topDrinkCard {
+		float: left;
+		margin-top: -20px;
+	}	
 }
+
+@media only screen and (max-width:600px){
+	div.leftContent {
+		float: left;
+		width: 99%;
+	}
+		   
+	div.rightContent {
+		float: left;
+		width: 99%;
+		margin-bottom: 20px;
+	}	
+}	
 
 /*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/
 
@@ -86,34 +125,31 @@ p.infoColumn {
        only screen and (-webkit-min-device-pixel-ratio: 2), 
        only screen and (min-device-pixel-ratio: 2) {
 		   
+/*<----------First Shrinking On Mobile Mode---------->*/		
+	
+/*<--Top Drink-->*/
+	
+	@media only screen and (max-width:675px){
+		div.topDrinkInfo {
+			float: left;
+			width: 99%;
+		}
+	}
+
+/*<----------Second Shrinking On Mobile Mode---------->*/
+		
 /*<--Largest Containers-->*/
 
-	div.leftContent {
-		float: left;
-		width: 99%;
-		margin-bottom: 20px;
-	}
+	@media only screen and (max-width:500px){
+		div.leftContent {
+			float: left;
+			width: 99%;
+		}
 		   
-	div.rightContent {
-		float: left;
-		width: 99%;
-		margin-bottom: 20px;
-	}
-	
-/*<--Top Drink SHITTY NEEDS IMPROVING WRAP TEXT AROUND DIV IF POSSIBLE-->*/
-	
-	p.topDrink {
-			width: 70%;
-		}
-	
-	@media only screen and (max-width:830px){
-		p.topDrink {
-			width: 50%;
-		}
-	}
-	@media only screen and (max-width:505px){
-		p.topDrink {
-			width: 100%;
+		div.rightContent {
+			float: left;
+			width: 99%;
+			margin-bottom: 20px;
 		}
 	}	
 }
