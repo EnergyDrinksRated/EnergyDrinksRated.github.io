@@ -33,6 +33,7 @@ div.leftProfileInfo {
 	float: left;
 	overflow: hidden;
 	border-bottom: dashed #9a0000 3px;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*<--Drink GIF-->*/
@@ -72,6 +73,7 @@ div.centerProfileInfo {
 	float: left;
 	overflow: hidden;
 	border-bottom: dashed #9a0000 3px;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*<--Drink Nutrition-->*/
@@ -109,6 +111,7 @@ div.rightProfileInfo {
 	border-right: solid #9a0000 3px;
 	overflow: hidden;
 	border-bottom: dashed #9a0000 3px;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*<----------Media Queries for PC Version---------->*/

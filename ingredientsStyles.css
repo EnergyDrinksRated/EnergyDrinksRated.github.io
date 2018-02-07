@@ -6,16 +6,20 @@
 
 /*<----------Description at Top of Page---------->*/
 
+div.pageDescription {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
 h1.pageDescription {
 	margin: 0px;
 	margin-bottom: 5px;
-	padding: 0px;
+	padding: 5px 1% 0px 1%;
 	font-size: 1.5rem;
 }	
 
 p.pageDescription {
 	margin: 0px;
-	padding: 0px;
+	padding: 0px 1% 5px 1%;
 	margin-bottom: 10px;
 }
 
@@ -36,30 +40,40 @@ p.pageDescription {
 
 /*<--Table-->*/
 
-#ingredientsTable {
+div.ingredientsTable {
 	margin: 0px;
 	margin-top: 20px;
+	padding: 10px 2% 10px 2%;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+#ingredientsTable {
+	margin: 0px;
 	padding: 0px;
 	width: 100%;
 	border-collapse: collapse;
 	text-align: left;
+	border: solid black 1px;
 }
 
 tr.header th {
 	border-bottom: solid black 1px;
+	padding: 5px 2% 5px 2%;
+	text-align: center;
 }
 
 tr.ingredient td {
 	border-bottom: solid black 1px;
+	padding: 5px 2% 5px 2%;
 }
 
 .columnOne {
-	width: 20%;
+	width: 30%;
 	border-right: solid black 1px;
 }
 
 .columnTwo {
-	width: 80%;
+	width: 70%;
 }	
 
 /*<----------Media Queries for MOBILE (phone and tablet) Version---------->*/

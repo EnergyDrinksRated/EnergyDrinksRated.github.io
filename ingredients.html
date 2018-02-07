@@ -22,6 +22,7 @@
   <meta name="keywords" content="Energy,Drinks,Rated,Ingredients,Reviews">
   <meta name="author" content="Matthew Elwood">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta charset="UTF-8">
   
   <!--Linked Styles for Page-->
   
@@ -62,35 +63,107 @@
   <!--Unique to Page Content-->
   
   <main>
-	
-	<h1 class="pageDescription"> Health Check the Contents of your Energy Drinks</h1>
-	
-	<p class="pageDescription"> Below is a comprehensive list of the ingredients in every drink featured on the site. Use the search bar to narrow down the list to find information about the ingredient you are looking for.</p>
+  
+    <div class="pageDescription">
+	  <h1 class="pageDescription"> Health Check the Contents of your Energy Drinks</h1>
+	  <p class="pageDescription"> Below is a comprehensive list of the ingredients in every drink featured on the site. Use the search bar to narrow down the list to find information about the ingredient you are looking for.</p>
+	</div> 
 	
 	<input type="text" id="ingredientInput" onkeyup="searchFunction()" placeholder="Search for an Ingredient..." title="Type in an Ingredient">
-
     
-	<table id="ingredientsTable">
-      <tr class="header">
-        <th class="columnOne">Ingredient Name</th>
-        <th class="columnTwo">Details</th>
-      </tr>
+	<div class="ingredientsTable">
+		<table id="ingredientsTable">
+		  <tr class="header">
+			<th class="columnOne">Ingredient Name</th>
+			<th class="columnTwo">Details</th>
+		  </tr>
 	  
-	  <tr class="ingredient">
-	    <td class="columnOne">ajkfbekf</td>
-		<td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
-	  </tr>
+	    <tr class="ingredient">
+	      <td class="columnOne">Artificial Flavours</td>
+	  	  <td class="columnTwo">Flavours made artificially differ from naturally produced ones in that they are not sourced from nature. The chemicals making up the flavouring are produced from scratch and can taste very similar to natural flavours. Health wise, artificial flavours can cause a wide range of side effects depending on how they were created and are less safe than natural flavours.</td>
+	    </tr>
 	  
-	  <tr class="ingredient">
-	    <td class="columnOne">kvdnvjdnjv</td>
-		<td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
-	  </tr>
+	    <tr class="ingredient">
+	      <td class="columnOne">Caffeine</td>
+		  <td class="columnTwo">This drug is a stimulant to the central nervous system and blocks the flow of chemicals in the brain responsible for making you feel drowsy. It is very good at making you feel alert and awake, however there are a number of side effects. Namely, as it is a simulative drug, withdrawal symptoms such as headaches and irritability are common.</td>
+	    </tr>
 	  
-	  <tr class="ingredient">
-	    <td class="columnOne">mnbvcd</td>
-		<td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
-	  </tr>
-	</table>
+	    <tr class="ingredient">
+	      <td class="columnOne">Caramel</td>
+		  <td class="columnTwo">In energy drinks this ingredient is used for colouring and flavour, not so much for its nutritional benefit as it is quite high in calories at 103kcal/70g. Caramel makes energy drinks sweeter and can give them a rich orange colour.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Carbon Dioxide</td>
+		  <td class="columnTwo">Drinks are carbonated to give them the fizzy taste and feel that is common in cold beverages. Interestingly, the fizz sensation is not caused by the bubbles but by the carbonic acid created during carbonation. There are no known health benefits or adverse effects.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Glucose</td>
+		  <td class="columnTwo">Glucose is a form of sugar that is a primary energy source for most organisms. It provides almost all of the energy for the brain, so one health benefit of this ingredient is that increases ability of self-control and decision making. Diabetes is when the body cannot properly regulate glucose levels, this can be caused by high glucose intake.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Inositol</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Natural Flavours</td>
+		  <td class="columnTwo">These are a combination of ingredients in very small amounts used in the drinks to trick your brain into tasting something that isn't actually in the drink or just by enhancing that flavour through cooking methods. Generally, natural flavourings are made from oil, essence, or extracted protein of fruit, veg, meat, dairy or even plants.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Niacine</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Pantothernic Acid</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Sodium Citrates</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Sucrose</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+		
+		<tr class="ingredient">
+	      <td class="columnOne">Sugar</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Taurine</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Vitamin B2</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Vitamin B6</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Vitamin B12</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+	  
+	    <tr class="ingredient">
+	      <td class="columnOne">Water</td>
+		  <td class="columnTwo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia pharetra molestie. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus tristique semper ante vitae varius. Integer non.</td>
+	    </tr>
+	  </table>
+	</div>  
 	
   </main>
   
