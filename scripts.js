@@ -1,5 +1,37 @@
+//Navbar Changes When it eaches Top of Page//
+//Function Triggered by Scroll//
+$(window).on('scroll', function () {
+    var scrollTop = $(window).scrollTop();
+        elementOffset = $('div.nav').offset().top;
+	    distance = (elementOffset - scrollTop);
+	if ( distance <= 0 ){
+		$("div.nav").css("border-radius", "0px");
+		$("div.navSides").css("display", "block");
+    } else {
+		$("div.nav").css("border-radius", "10px 10px 0px 0px");
+		$("div.navSides").css("display", "none");
+}
+});
+//Function Triggered by Resize//
+$(window).on('resize', function () {
+    var scrollTop = $(window).scrollTop();
+        elementOffset = $('div.nav').offset().top;
+	    distance = (elementOffset - scrollTop);
+		console.log(distance);
+	if ( distance <= 0 ){
+		$("div.nav").css("border-radius", "0px");
+		$("div.navSides").css("display", "block");
+    } else {
+		$("div.nav").css("border-radius", "10px 10px 0px 0px");
+		$("div.navSides").css("display", "none");
+}
+});
+//Back To Top//
+function backToTop() {
+	document.body.scrollTop = document.documentElement.scrollTop = 0;
+};
+//OLD CODE//
 //Table Search From W3Schools//
-
 function searchFunction() {
   var input, filter, table, tr, td, i;
   input = document.getElementById("ingredientInput");
@@ -17,15 +49,7 @@ function searchFunction() {
     }       
   }
 }
-
-//Back To Top//
-
-function backToTop() {
-	document.body.scrollTop = document.documentElement.scrollTop = 0;
-};
-
 //Show Hide Toggle For Red Bull//
-
 function hideRedBullProfiles() {
     var x = document.getElementById("redBullProfiles");
 	var y = document.getElementById("redBullPlus");
