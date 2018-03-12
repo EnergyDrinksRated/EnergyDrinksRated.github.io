@@ -1,4 +1,4 @@
-/*<----------force update---------->*/
+
 /*--------------------Base--------------------*/
 
 /*Info*/
@@ -14,7 +14,7 @@ html {
 body {
 	margin: 0px;
 	padding: 0px;
-	background: url("cansBackground.png");
+	background: url("cansBackgroundImage1.png");
 	background-repeat: repeat;
 	background-size: 250px;
 	background-attachment: fixed;
