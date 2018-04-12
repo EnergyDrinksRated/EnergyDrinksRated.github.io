@@ -4,4 +4,58 @@
 /*INFO*/
 /*This style sheet includes styles used by the my bio page*/
 
-/*<--NONE YET-->*/
+/*<--Styles Used Across Page-->*/
+
+* {
+	box-sizing: border-box;
+}	
+
+h2.sectionTitles {
+	margin: 0px;
+	padding: 5px;
+	font-size: 1.2rem;
+	background-color: white;
+	border-top: dashed #9a0000 3px;
+	border-bottom: dashed #9a0000 3px;
+	width: 100%;
+	border-left: solid #9a0000 3px;
+	border-right: solid #9a0000 3px;
+}
+
+#correctMargin {
+	margin-top: -7px;
+}	
+
+/*<--Styles for Elements on the Left-->*/
+
+div.leftBioInfo {
+	width: 30%;
+	float: left;
+}
+
+img.myPhoto {
+	width: 100%;
+	border-left: solid #9a0000 3px;
+	border-right: solid #9a0000 3px;
+	border-top: dashed #9a0000 3px;
+	border-bottom: dashed #9a0000 3px;
+}
+
+/*<--Styles for Elements on the Right-->*/
+
+div.rightBioInfo {
+	width: 68%;
+	float: left;
+	margin-left: 2%;
+}
+
+p.bioText {
+	margin: 0px;
+	margin-top: -4px;
+	padding: 5px;
+	border-left: solid #9a0000 3px;
+	border-right: solid #9a0000 3px;
+	border-top: dashed #9a0000 3px;
+	border-bottom: dashed #9a0000 3px;
+	background-color: rgba(255, 255, 255, 0.5);
+}	

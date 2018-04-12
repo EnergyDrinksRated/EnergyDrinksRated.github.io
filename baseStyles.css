@@ -25,6 +25,12 @@ body {
     overflow: auto;
 }
 
+a.email {
+	list-style-type: none;
+	color: white;
+	font-family: arial;
+}	
+
 div.centerContain {
 	width: 900px;
 	margin: 0px auto;
